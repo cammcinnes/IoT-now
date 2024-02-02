@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import "./style/Home.css"
+import Button from './components/Button'
 
 function Home() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-       <button />
+      <Button />
+      
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
