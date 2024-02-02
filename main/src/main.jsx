@@ -5,12 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Home";
+import CreateProject from "./CreateProject"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
     errorElement: <ErrorPage />
+  },
+  {
+    path: "create",
+    element: <CreateProject />
   },
 ]);
 
