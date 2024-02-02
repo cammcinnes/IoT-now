@@ -20,7 +20,7 @@ function CreateProject() {
           <input type="text" value={LCD} onChange={e => setLCD(e.target.value)}/>
           <h3>{LCD}</h3>
         </div>
-        <button type= "submit"> Create Project </button>
+        <button type= "submit"> Create </button>
     </>
   );
 }
