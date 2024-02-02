@@ -5,16 +5,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Home";
+import CreateProject from "./CreateProject"
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
   },
-  // {
-  //   path: "/create",
-  //   element: <CreateProject />
-  // },
+  {
+    path: "create",
+    element: <CreateProject />
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
