@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import "./style/Home.css";
-import Button from './components/Button';
+import "../style/Home.css";
+import Button from '../components/Button';
 
 function CreateProject() {
   const [MCU, setMCU] = useState("");
