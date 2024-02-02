@@ -5,7 +5,7 @@ import cors from 'cors';
 
 
 const openai = new OpenAI({
-  apiKey: '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'
+  apiKey: ''
 });
 
 // create an simple express api that calls the function above
