@@ -2,13 +2,13 @@ import { useState } from 'react'
 import "./style/Home.css"
 
 function Home() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-       <button />
+      <h1>HomePage</h1>
+      <button />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
