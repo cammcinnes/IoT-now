@@ -6,8 +6,8 @@ function Home() {
 
   return (
     <>
-      <Button />
-      
+      <h1>HomePage</h1>
+      <button />
     </>
   );
 }
