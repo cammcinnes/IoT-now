@@ -34,8 +34,7 @@ function CreateProject() {
       setLCD("");
 
       const data = await response.json();
-      console.log(data);
-      setProject(data);
+      setProject(data.message);
   }
 
   return (
