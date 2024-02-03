@@ -33,9 +33,9 @@ app.post('/', async (req, res) => {
         temperature: 0.5,
       });
   
-      console.log(completion.choices[0]);
+      // console.log(completion.choices[0]);
       res.json({
-        message: completion.choices[0].text,
+        message: completion.choices[0].message.content,
       });
     } catch (error) {
       console.error(error);
