@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import CreateProject from "./pages/CreateProject";
 import ErrorPage from "./pages/ErrorPage";
+// import Project from "./pages/Project";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,14 @@ const router = createBrowserRouter([
   },
   {
     path: "create",
-    element: <CreateProject />
+    element: <CreateProject />,
+    errorElement: <ErrorPage />
   },
+  // {
+  //   path: "project",
+  //   element: <Project />,
+  //   errorElement: <ErrorPage />
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
