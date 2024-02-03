@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import "../style/Home.css";
 // import { useNavigate } from 'react-router-dom';
 
+// show values on page if working on code
+const debug = true;
 
 function CreateProject() {
   const [MCU, setMCU] = useState("");
@@ -44,7 +46,7 @@ function CreateProject() {
           <form onSubmit={handleSubmit}>
             <h2>Microcontrollers: </h2>
             <input type="text" value={MCU} onChange={e => setMCU(e.target.value)}/>
-            <p>{MCU}</p>
+            {debug && <p>{MCU}</p>}
             <h2>Sensors: </h2>
             <input type="text" value={Sensor} onChange={e => setSensor(e.target.value)}/>
             <h2>LCD: </h2>
@@ -53,8 +55,8 @@ function CreateProject() {
             <br></br>
             <button type= "submit"> Create </button>
             </form>
-            <p>Message to gpt3.5: {chatLog}</p>
-            <p>{Project}</p>
+            {debug && <p>Message to gpt3.5: {chatLog}</p>}
+            {debug && <p>{Project}</p>}
         </div>
     </>
   );

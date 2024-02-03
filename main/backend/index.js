@@ -2,7 +2,6 @@ import OpenAI from "openai";
 import express from "express";
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import fetch from 'node-fetch';
 import {config} from './config.js';
 
 const myKey = config.apiKey;
