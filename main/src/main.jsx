@@ -4,22 +4,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./pages/Home";
 import CreateProject from "./pages/CreateProject";
 import ErrorPage from "./pages/ErrorPage";
+import Home from "./pages/Home";
 // import Project from "./pages/Project";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
     errorElement: <ErrorPage />
   },
   {
     path: "create",
     element: <CreateProject />,
     errorElement: <ErrorPage />
-  },
+  }
   // {
   //   path: "project",
   //   element: <Project />,

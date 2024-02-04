@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import "../style/Home.css";
+import "../style/CreateProject.css";
+import "../style/Main.css";
 // import { useNavigate } from 'react-router-dom';
 
 // show values on page if working on code
