@@ -34,7 +34,7 @@ app.post('/', async (req, res) => {
   
       // console.log(completion.choices[0]);
       res.json({
-        message: completion.choices[0].message.content,
+        message: completion.choices[0].message.content 
       });
     } catch (error) {
       console.error(error);
