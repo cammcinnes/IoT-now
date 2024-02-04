@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import "../style/Home.css"
-import Button from '../components/Button'
 import { useNavigate } from 'react-router-dom';
+import "../style/Home.css";
+import "../style/Main.css";
 
 function Home() {
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ function Home() {
 
   return (
     <>
-      <h1>HomePage</h1>
+      <h1>Home Page</h1>
       <button onClick={goto}> Create Project </button>
     </>
   );
