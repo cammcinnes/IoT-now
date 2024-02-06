@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import "../style/CreateProject.css";
 import "../style/Main.css";
+import Navbar from "../components/Navbar";
 // import { useNavigate } from 'react-router-dom';
 
 // show values on page if working on code
@@ -43,6 +44,7 @@ function CreateProject() {
 
   return (
     <>
+    <Navbar />
       <h1>Create Project</h1>
       <div className="input">
         <form onSubmit={handleSubmit}>
